@@ -78,11 +78,9 @@ function extractNumber(text) {
 //api for saving profile data
 app.post("/linkedinsave", async (req, res) => {
     try{
-    //our three links which will be opened
-    // let links = ["https://www.linkedin.com/in/daniil-rabizo/", "https://www.linkedin.com/in/raziel121/", "https://www.linkedin.com/in/frazmohammad/"]
+    
     console.log(req.body)
-    //getting index of present link in window
-    // let ind = links.indexOf(req.body.link)
+
     let { name, link, bio, about, location, connections, followers } = req.body
     connections = extractNumber(connections)
     followers = extractNumber(followers)
@@ -98,8 +96,7 @@ app.post("/linkedinsave", async (req, res) => {
     });
     console.log(profile)
 
-    //sending the next link in response
-    // res.status(200).json({ "message": "data posted", "link": links[ind + 1] })
+   
     res.status(200).json({"message":"data extracted"})
 }
 catch(err)
