@@ -57,7 +57,7 @@ function extractDataFromLinkedInProfiles() {
     .then(data => {
       console.log('Data posted successfully:', data);
       alert('Data posted successfully!');
-      // window.location.href = data.link
+      
 
     })
     .catch(error => {
