@@ -2,6 +2,14 @@
 
 This Chrome extension allows users to extract data from LinkedIn profiles and save it to a server. The extracted data includes the profile name, link, bio, about section, location, connections, and followers.
 
+## Demo Video
+
+
+https://github.com/ShaikMoinuddin98/Linkedin-Profile-Data-Extractor-Extension/assets/130903025/023af4b5-36a9-420f-a217-0267265a1369
+
+
+
+
 ## Features
 
 - Extracts key data from LinkedIn profiles.
