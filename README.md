@@ -20,13 +20,13 @@ This Chrome extension allows users to extract data from LinkedIn profiles and sa
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/linkedin-profile-extractor.git
-    cd linkedin-profile-extractor
+    git clone https://github.com/ShaikMoinuddin98/Linkedin-Profile-Data-Extractor-Extension.git
+    cd Linkedin-Profile-Data-Extractor-Extension
     ```
 
 2. Install the dependencies:
     ```sh
-    npm install
+    npm install mysql express 
     ```
 
 3. Configure MySQL Database:
