@@ -26,12 +26,12 @@ This Chrome extension allows users to extract data from LinkedIn profiles and sa
 
 2. Install the dependencies:
     ```sh
-    npm install mysql express 
+    npm install body-parser express sequelize
     ```
 
 3. Configure MySQL Database:
     - Ensure you have a MySQL database named `atg`.
-    - Update the Sequelize configuration in `server.js` if necessary:
+    - Update the Sequelize configuration in `index.js` if necessary:
       ```js
       const sequelize = new Sequelize('atg', 'root', 'yourpassword', {
           host: 'localhost',
@@ -41,7 +41,7 @@ This Chrome extension allows users to extract data from LinkedIn profiles and sa
 
 4. Run the server:
     ```sh
-    node server.js
+    node index.js
     ```
 
 ### Chrome Extension Setup
