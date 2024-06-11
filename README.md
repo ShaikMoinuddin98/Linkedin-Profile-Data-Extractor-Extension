@@ -57,5 +57,45 @@ This Chrome extension allows users to extract data from LinkedIn profiles and sa
 3. Click the "Extract Data" button in the popup.
 4. The data will be sent to your server and you will receive a success or error message.
 
-## File Structure
+
+## Code Overview
+
+### `index.js`
+
+- Sets up an Express server.
+- Defines a Sequelize model for storing profile data.
+- Provides an API endpoint `/linkedinsave` to save extracted data.
+- Includes CORS support and a utility function for extracting numbers from text.
+
+### `popup.html`
+
+- HTML structure for the extension popup.
+
+### `popup.js`
+
+- JavaScript to handle button clicks and execute content scripts.
+- Defines the `extractDataFromLinkedInProfiles` function to extract profile data and send it to the server.
+
+### `manifest.json`
+
+- Chrome extension manifest file, specifying permissions and scripts required for the extension.
+
+## API Endpoints
+
+### POST /linkedinsave
+
+Saves the extracted LinkedIn profile data to the database.
+
+**Request Body:**
+```json
+{
+  "name": "Profile Name",
+  "link": "Profile URL",
+  "about": "About Section",
+  "bio": "Bio",
+  "location": "Location",
+  "connections": "Number of Connections",
+  "followers": "Number of Followers"
+}
+
 
