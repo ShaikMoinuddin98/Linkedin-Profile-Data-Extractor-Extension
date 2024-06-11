@@ -97,5 +97,10 @@ Saves the extracted LinkedIn profile data to the database.
   "connections": "Number of Connections",
   "followers": "Number of Followers"
 }
+**Response Body:**
+```json
+{
+  "message": "data extracted"
+}
 
 
